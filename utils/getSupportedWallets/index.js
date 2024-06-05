@@ -5,7 +5,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 var _common = require("../../common");
-var _assets = require("../../assets");
 var _reactDeviceDetect = require("react-device-detect");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
@@ -16,84 +15,84 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 var supportedWallets = [{
   id: _common.SupportedWallet.vespr,
   name: "vespr",
-  icon: _assets.logos.vespr,
+  icon: "https://res.cloudinary.com/newm/image/upload/v1706668760/vespr-logo_emqgo8.webp",
   extensionUrl: _reactDeviceDetect.isIOS ? "https://apps.apple.com/pk/app/vespr-cardano-wallet/id1565749376" : "https://play.google.com/store/apps/details?id=art.nft_craze.gallery.main&hl=en_US&gl=US&pli=1",
   websiteUrl: "https://vespr.gitbook.io/vespr/introduction/about",
   isMobile: true
 }, {
   id: _common.SupportedWallet.nami,
   name: "Nami",
-  icon: _assets.logos.nami,
+  icon: "https://res.cloudinary.com/newm/image/upload/v1706668811/nami-logo_reuohl.svg",
   extensionUrl: "https://chrome.google.com/webstore/detail/nami/lpfcbjknijpeeillifnkikgncikgfhdo",
   websiteUrl: "https://namiwallet.io/",
   isMobile: false
 }, {
   id: _common.SupportedWallet.eternl,
   name: "Eternl",
-  icon: _assets.logos.eternl,
+  icon: "https://res.cloudinary.com/newm/image/upload/v1706668366/eternl-logo_serw55.png",
   extensionUrl: "https://chrome.google.com/webstore/detail/eternl/kmhcihpebfmpgmihbkipmjlmmioameka",
   websiteUrl: "https://eternl.io/",
   isMobile: false
 }, {
   id: _common.SupportedWallet.flint,
   name: "Flint",
-  icon: _assets.logos.flint,
+  icon: "https://res.cloudinary.com/newm/image/upload/v1706668855/flint-logo_bjv3ha.svg",
   extensionUrl: "https://chrome.google.com/webstore/detail/flint-wallet/hnhobjmcibchnmglfbldbfabcgaknlkj",
   websiteUrl: "https://flint-wallet.com/",
   isMobile: false
 }, {
   id: _common.SupportedWallet.cardwallet,
   name: "Cardwallet",
-  icon: _assets.logos.cardwallet,
+  icon: "https://res.cloudinary.com/newm/image/upload/v1706668906/cardwallet-logo_ddtpuv.svg",
   extensionUrl: "https://chrome.google.com/webstore/detail/cwallet/apnehcjmnengpnmccpaibjmhhoadaico",
   websiteUrl: "https://cwallet.finance/",
   isMobile: false
 }, {
   id: _common.SupportedWallet.gerowallet,
   name: "GeroWallet",
-  icon: _assets.logos.geroWallet,
+  icon: "https://res.cloudinary.com/newm/image/upload/v1706668958/gero-wallet-logo_mf7i7f.png",
   extensionUrl: "https://chrome.google.com/webstore/detail/gerowallet/bgpipimickeadkjlklgciifhnalhdjhe",
   websiteUrl: "https://gerowallet.io/",
   isMobile: false
 }, {
   id: _common.SupportedWallet.typhon,
   name: "Typhon",
-  icon: _assets.logos.typhon,
+  icon: "https://res.cloudinary.com/newm/image/upload/v1706668668/typhon-logo_jxwqoi.svg",
   extensionUrl: "https://chrome.google.com/webstore/detail/typhon-wallet/kfdniefadaanbjodldohaedphafoffoh",
   websiteUrl: "https://typhonwallet.io/",
   isMobile: false
 }, {
   id: _common.SupportedWallet.yoroi,
   name: "Yoroi",
-  icon: _assets.logos.yoroi,
+  icon: "https://res.cloudinary.com/newm/image/upload/v1706669030/yoroi-logo_t9ayqc.svg",
   extensionUrl: "https://chrome.google.com/webstore/detail/typhon-wallet/kfdniefadaanbjodldohaedphafoffoh",
   websiteUrl: "https://typhonwallet.io/",
   isMobile: false
 }, {
   id: _common.SupportedWallet.lodeWallet,
   name: "LodeWallet",
-  icon: _assets.logos.lodeWallet,
+  icon: "https://res.cloudinary.com/newm/image/upload/v1706669067/lode-wallet-logo_lczldt.png",
   extensionUrl: "https://chrome.google.com/webstore/detail/lodewallet/ikffplhknjhbfkgbhnionfklokakmknd",
   websiteUrl: "https://lodewallet.io/",
   isMobile: false
 }, {
   id: _common.SupportedWallet.nufi,
   name: "nufi",
-  icon: _assets.logos.nufi,
+  icon: "https://res.cloudinary.com/newm/image/upload/v1706669107/nufi-logo_iutlxs.svg",
   extensionUrl: "https://chrome.google.com/webstore/detail/nufi/gpnihlnnodeiiaakbikldcihojploeca",
   websiteUrl: "https://nu.fi/",
   isMobile: false
 }, {
   id: _common.SupportedWallet.begin,
   name: "begin",
-  icon: _assets.logos.begin,
+  icon: "https://res.cloudinary.com/newm/image/upload/v1706669164/begin-logo_t0fu7d.webp",
   extensionUrl: "https://chrome.google.com/webstore/detail/begin-wallet/nhbicdelgedinnbcidconlnfeionhbml",
   websiteUrl: "https://begin.is/",
   isMobile: false
 }, {
   id: _common.SupportedWallet.lace,
   name: "lace",
-  icon: _assets.logos.lace,
+  icon: "https://res.cloudinary.com/newm/image/upload/v1706669221/lace-logo_mhtvnb.svg",
   extensionUrl: "https://chrome.google.com/webstore/detail/lace/gafhhkghbfjjkeiendhlofajokpaflmk",
   websiteUrl: "https://www.lace.io/",
   isMobile: false
@@ -109,10 +108,10 @@ var getSupportedWallets = function getSupportedWallets() {
   var supportedBrowsers = ["Chrome", "Brave"];
   var isBrowserSupported = supportedBrowsers.includes(_reactDeviceDetect.browserName);
   supportedWallets.forEach(function (wallet) {
-    var _window;
+    var _window$cardano;
     var isMobileWalletInstallable = wallet.isMobile && _reactDeviceDetect.isMobile;
     var isBrowserExtensionWalletInstallable = !wallet.isMobile && isBrowserSupported;
-    if ((_window = window) !== null && _window !== void 0 && _window.cardano && window.cardano[wallet.id]) {
+    if (typeof window !== "undefined" && (_window$cardano = window.cardano) !== null && _window$cardano !== void 0 && _window$cardano[wallet.id]) {
       installedWallets.push(_objectSpread(_objectSpread(_objectSpread({}, wallet), window.cardano[wallet.id]), {}, {
         isInstalled: true
       }));

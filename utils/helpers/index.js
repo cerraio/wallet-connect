@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.fromHex = exports.addressFromHex = void 0;
+exports.getInitialWalletName = exports.fromHex = exports.addressFromHex = void 0;
 var _bech = require("bech32");
 var _common = require("../../common");
 var _buffer = require("buffer");
@@ -18,4 +18,18 @@ exports.addressFromHex = addressFromHex;
 var fromHex = function fromHex(hex) {
   return _buffer.Buffer.from(hex, "hex");
 };
+
+/**
+ * References localStorage to get stored wallet key with a check to
+ * avoid Next.js server-side error where window is not defined.
+ *
+ * @returns the stored wallet key string or null
+ */
 exports.fromHex = fromHex;
+var getInitialWalletName = function getInitialWalletName() {
+  if (typeof window !== "undefined") {
+    return window.localStorage.getItem(_common.storageKey);
+  }
+  return null;
+};
+exports.getInitialWalletName = getInitialWalletName;
